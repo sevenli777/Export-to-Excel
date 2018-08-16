@@ -158,7 +158,6 @@ public class MainActivity extends Activity implements BaseQuickAdapter.OnItemChi
         for (int i = 0; i < split.length; i++) {
             list.add(split[i]);
         }
-
         TanWeiInfo order = new TanWeiInfo();
         order.setOrderId(new Date().getTime() + "");
         order.setTanweiList(list);
