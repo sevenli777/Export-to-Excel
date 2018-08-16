@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">周禹舜</string>
+
+    <string name="message_permission_always_failed">需要\"%1$s\"权限，请在设置中开启</string>
+</resources>

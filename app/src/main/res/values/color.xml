@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#646464</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bg">#F0F0F0</color>
+    <color name="btn_bg">#cccccc</color>
+
+    <color name="colorTitle">#333333</color>
+
+    <color name="red">#FF0000</color>
+
+    <color name="yellow">#ffae00</color>
+
+    <color name="half_yellow">#7fffae00</color>
+
+    <color name="blue">#32beff</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="transparent">#00ffffff</color>
+
+
+
+    <!--首页item文字颜色-->
+    <color name="txt_color">#646464</color>
+    <color name="txt_msg_color">#333333</color>
+    <color name="warn_msg_color">#FF4545</color>
+    <color name="txt_grey_color">#999999</color>
+    <color name="txt_blue_color">#2361ff</color>
+
+    <!--分割线-->
+    <color name="colorLine">#eeedef</color>
+    <color name="color_underLine">#eeedef</color>
+
+    <!--实名-->
+    <color name="txt_realname_background">#FFECC2</color>
+    <color name="txt_upload_photo">#2361FF</color>
+    <color name="txt_white">#fffefe</color>
+    <color name="photo_background">#7f000000</color>
+    <color name="hand_photo_background">#7f646464</color>
+
+    <!--提现-->
+    <color name="withdraw_blue">#2361ff</color>
+</resources>

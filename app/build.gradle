@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+// apply greenDao plugin
+apply plugin: 'org.greenrobot.greendao'
+
+apply plugin:'com.github.dcendents.android-maven'
+
+group='com.github.sevenli777'
+
+greendao {
+    schemaVersion 1
+    daoPackage 'db' // 一般为app包名+生成文件的文件夹名
+    targetGenDir 'src/main/java' //生成文件路径
+}
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.quitter.quitter"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main {
+        manifest.srcFile 'src/main/AndroidManifest.xml'
+        java.srcDirs = ['src/main/java']
+        resources.srcDirs = ['src/main/java']
+        res.srcDirs = ['src/main/res']
+        assets.srcDirs = ['src/main/assets']
+        jniLibs.srcDirs = ['libs']
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    implementation files('libs/jxl.jar')
+
+    // add greenDao library
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'org.greenrobot:greendao-generator:3.2.2'
+    compile "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22"
+    compile "com.android.support:recyclerview-v7:26.1.0"
+    //permission 请求
+    compile 'com.yanzhenjie:permission:2.0.0-rc4'
+
+}
